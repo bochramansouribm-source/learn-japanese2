@@ -1,174 +1,70 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-
-  <head>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
   <meta charset="UTF-8">
-  <title>تعلم اللغة اليابانية - الموقع الرسمي</title>
-  <meta name="description" content="تعلم اللغة اليابانية بسهولة مع الدروس الصوتية والحروف والجمل الأساسية.">
+  <title>تعلم اللغة اليابانية - موقعك</title>
+  <meta name="description" content="تعلم اللغة اليابانية بسهولة مع الحروف والجمل الأساسية والأصوات المدمجة.">
   <meta name="keywords" content="تعلم اليابانية, حروف يابانية, جمل يابانية, دروس يابانية">
-  <meta name="author" content="Bochra Mansouri">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f0f8ff; color: #333; margin: 0; padding: 0; }
-    header { background: #4682b4; color: white; padding: 20px 0; text-align: center; }
-    h1 { margin: 0; font-size: 2em; }
-    section { padding: 20px; max-width: 800px; margin: auto; background: white; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
-    h2 { color: #4682b4; }
-    .letter { display: inline-block; text-align: center; margin: 10px; }
-    .letter span { display: block; font-size: 2em; }
+    body { font-family: Arial, sans-serif; background: #f0f8ff; margin: 0; padding: 0; color:#333; }
+    header { background: #4682b4; color: white; text-align: center; padding: 20px 0; }
+    h1 { margin: 0; font-size: 2.2em; }
+    section { background: white; max-width: 900px; margin: 20px auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    h2 { color: #4682b4; margin-bottom: 15px; }
+    .letters, .phrases { display: flex; flex-wrap: wrap; gap: 15px; }
+    .letter, .phrase { text-align: center; margin-bottom: 15px; }
+    .letter span { font-size: 2em; display: block; }
     audio { display: block; margin-top: 5px; }
   </style>
-  </head>
+</head>
 <body>
-  <header>
-    <h1>✨ تعلم اليابانية — حروف وجمل صوتية (بالعربية)</h1>
-    <div class="note">تشغيل من خادم صوتي محلي إن وُجد، وإلا يستعمل نطق المتصفح (SpeechSynthesis).</div>
-  </header>
 
-  <nav class="container" aria-label="روابط">
-    <a href="#hiragana">الهيراغانا (الحروف)</a>
-    <a href="#phrases">العبارات الأساسية</a>
-    <a href="#usage">كيفية الإعداد</a>
-  </nav>
+<header>
+  <h1>تعلم اللغة اليابانية بسهولة</h1>
+</header>
 
-  <main class="container">
+<section>
+  <h2>الحروف اليابانية - Hiragana</h2>
+  <div class="letters">
+    <div class="letter"><span>あ</span><audio controls><source src="audio/a.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>い</span><audio controls><source src="audio/i.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>う</span><audio controls><source src="audio/u.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>え</span><audio controls><source src="audio/e.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>お</span><audio controls><source src="audio/o.mp3" type="audio/mpeg"></audio></div>
+    <!-- يمكنك إضافة باقي الحروف بنفس النمط -->
+  </div>
+</section>
 
-    <!-- HIRAGANA -->
-    <section id="hiragana" style="margin-top:18px">
-      <h2>الهيراغانا — الحروف الأساسية (一覧)</h2>
-      <p class="note">اضغط على 🔊 لتشغيل ملف صوتي محلي (من الخادم). إن لم يوجد الملف سيتم النطق عبر المتصفح.</p>
+<section>
+  <h2>الحروف اليابانية - Katakana</h2>
+  <div class="letters">
+    <div class="letter"><span>ア</span><audio controls><source src="audio/ka.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>イ</span><audio controls><source src="audio/ki.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>ウ</span><audio controls><source src="audio/ku.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>エ</span><audio controls><source src="audio/ke.mp3" type="audio/mpeg"></audio></div>
+    <div class="letter"><span>オ</span><audio controls><source src="audio/ko.mp3" type="audio/mpeg"></audio></div>
+    <!-- أكمل باقي الحروف -->
+  </div>
+</section>
 
-      <div class="grid" id="hiraganaGrid" style="margin-top:12px">
-        <!-- سنملأ هذا بالـ JS (أجعل HTML أنظف) -->
-      </div>
-    </section>
+<section>
+  <h2>الجمل الأساسية</h2>
+  <div class="phrases">
+    <div class="phrase"><p>مرحبًا - こんにちは</p><audio controls><source src="audio/konnichiwa.mp3" type="audio/mpeg"></audio></div>
+    <div class="phrase"><p>شكراً - ありがとう</p><audio controls><source src="audio/arigatou.mp3" type="audio/mpeg"></audio></div>
+    <div class="phrase"><p>كيف حالك؟ - お元気ですか？</p><audio controls><source src="audio/ogenkidesuka.mp3" type="audio/mpeg"></audio></div>
+    <div class="phrase"><p>مع السلامة - さようなら</p><audio controls><source src="audio/sayounara.mp3" type="audio/mpeg"></audio></div>
+    <div class="phrase"><p>نعم - はい</p><audio controls><source src="audio/hai.mp3" type="audio/mpeg"></audio></div>
+    <div class="phrase"><p>لا - いいえ</p><audio controls><source src="audio/iie.mp3" type="audio/mpeg"></audio></div>
+  </div>
+</section>
 
-    <!-- PHRASES -->
-    <section id="phrases" style="margin-top:22px">
-      <h2>العبارات الأساسية — جمل يومية</h2>
-      <div class="grid" id="phrasesGrid" style="margin-top:12px"></div>
-    </section>
+<footer style="text-align:center; padding:20px; background:#4682b4; color:white;">
+  &copy; 2025 تعلم اللغة اليابانية
+</footer>
 
-    <!-- USAGE / INSTRUCTIONS -->
-    <section id="usage" style="margin-top:20px">
-      <h2>كيفية تشغيل الخوادم الصوتية محليًا</h2>
-      <ol>
-        <li>ضع هذا الملف <code>index.html</code> داخل مجلّد <code>web/</code> أو افتحه مباشرة.</li>
-        <li>ضع الخادوم Node/Express في مجلّد <code>server/</code>، وشغّل سكربت Python <code>generate_tts.py</code> لتوليد ملفات MP3 (سأعطيك السكربت أدناه).</li>
-        <liشغّل الخادوم: <code>node server.js</code>. ملفات الصوت ستكون متاحة عند <code>http://localhost:4000/audio/...</code>.</li>
-      </ol>
-      <p class="note">إذا فتحت الملف عبر <code>file://</code> فلن تعمل الشبكة المحلية إلا إذا شغّلت الخادوم؛ لذلك الأفضل فتحه من الخادوم (index.html يمكن أن يُخدم أيضاً من الخادوم).</p>
-    </section>
-  </main>
-
-  <footer>
-    © 2025 — تعلم اليابانية بالعربية — يدعم الصوت (ملفات MP3 محلية أو نطق المتصفح)
-  </footer>
-
-  <script>
-  /********** إعدادات مسارات الصوت **********/
-  // AUDIO_BASE: المسار الأساسي لملفات الصوت (يبحث أولاً في origin إذا الصفحة مخدومة عبر http)
-  const AUDIO_BASE = (function(){
-    try {
-      if (location.protocol.startsWith('http')) return location.origin + '/audio';
-    } catch(e){}
-    return 'http://localhost:4000/audio'; // fallback عندما تفتح الملف مباشرة
-  })();
-
-  /********** بيانات الحروف والجمل (قوائم) **********/
-  // قائمة الهيراغانا (مفتاح الملف: romaji)
-  const HIRAGANA = [
-    ['a','あ','a'], ['i','い','i'], ['u','う','u'], ['e','え','e'], ['o','お','o'],
-    ['ka','か','ka'], ['ki','き','ki'], ['ku','く','ku'], ['ke','け','ke'], ['ko','こ','ko'],
-    ['sa','さ','sa'], ['shi','し','shi'], ['su','す','su'], ['se','せ','se'], ['so','そ','so'],
-    ['ta','た','ta'], ['chi','ち','chi'], ['tsu','つ','tsu'], ['te','て','te'], ['to','と','to'],
-    ['na','な','na'], ['ni','に','ni'], ['nu','ぬ','nu'], ['ne','ね','ne'], ['no','の','no'],
-    ['ha','は','ha'], ['hi','ひ','hi'], ['fu','ふ','fu'], ['he','へ','he'], ['ho','ほ','ho'],
-    ['ma','ま','ma'], ['mi','み','mi'], ['mu','む','mu'], ['me','め','me'], ['mo','も','mo'],
-    ['ya','や','ya'], ['yu','ゆ','yu'], ['yo','よ','yo'],
-    ['ra','ら','ra'], ['ri','り','ri'], ['ru','る','ru'], ['re','れ','re'], ['ro','ろ','ro'],
-    ['wa','わ','wa'], ['wo','を','wo'], ['n','ん','n']
-  ];
-
-  // قائمة العبارات الأساسية (مفتاح الملف = romaji_key)
-  const PHRASES = [
-    ['konnichiwa','こんにちは','مرحباً / مساء الخير'],
-    ['ohayou_gozaimasu','おはようございます','صباح الخير (رسمي)'],
-    ['arigatou_gozaimasu','ありがとうございます','شكراً جزيلاً'],
-    ['arigatou','ありがとう','شكراً (غير رسمي)'],
-    ['sumimasen','すみません','عذراً / لو سمحت'],
-    ['hai','はい','نعم'],
-    ['iie','いいえ','لا'],
-    ['sayounara','さようなら','إلى اللقاء'],
-    ['watashi_wa_gakusei_desu','私は学生です','أنا طالب/طالبة'],
-    ['toire_wa_doko_desu_ka','トイレはどこですか','أين الحمام؟'],
-    ['onegai_shimasu','お願いします','من فضلك (لطلب رسمي)'],
-    ['yoroshiku_onegaishimasu','よろしくお願いします','سعدت بلقائك / أرجو تعاونك'],
-    ['o_genki_desu_ka','お元気ですか','هل أنت بخير؟']
-  ];
-
-  /********** رسم الواجهة (الحروف والجمل) **********/
-  const hiraganaGrid = document.getElementById('hiraganaGrid');
-  const phrasesGrid = document.getElementById('phrasesGrid');
-
-  function buildCard(titleJP, romaji, note, onclick){
-    const div = document.createElement('div');
-    div.className = 'card';
-    div.innerHTML = `
-      <div class="jp" style="direction:ltr">${titleJP}</div>
-      <div class="romaji">${romaji} ${note ? '• ' + note : ''}</div>
-      <div style="margin-top:10px">
-        <button class="btn" type="button">🔊 تشغيل</button>
-      </div>
-    `;
-    div.querySelector('button').addEventListener('click', onclick);
-    return div;
-  }
-
-  // fill hiragana
-  HIRAGANA.forEach(([key,kana,romaji])=>{
-    const card = buildCard(kana, romaji, '', ()=> playAudio('hiragana', key, kana));
-    hiraganaGrid.appendChild(card);
-  });
-
-  // fill phrases
-  PHRASES.forEach(([key,jp,ar])=>{
-    const card = buildCard(jp, key.replace(/_/g,' '), ar, ()=> playAudio('phrases', key, jp));
-    phrasesGrid.appendChild(card);
-  });
-
-  /********** تشغيل الصوت: يحاول تشغيل mp3 من الخادم وإلا يستخدم SpeechSynthesis كبديل **********/
-  async function playAudio(type, key, jpText){
-    const url = `${AUDIO_BASE}/${type}/${key}.mp3`;
-    // انشئ عنصر صوت وحاول تشغيله
-    try {
-      const audio = new Audio(url);
-      audio.volume = 1.0;
-      // محاولة تشغيل — بعض المتصفحات قد تمنع التشغيل الآلي حتى يتفاعل المستخدم (لكن هنا استجابة للنقرة)
-      await audio.play();
-      return;
-    } catch (err) {
-      // فشل تشغيل mp3، سنستخدم SpeechSynthesis كبديل
-      try {
-        const ut = new SpeechSynthesisUtterance(jpText || key);
-        ut.lang = 'ja-JP';
-        // اختيار صوت ياباني إذا موجود
-        const voices = speechSynthesis.getVoices();
-        const jpVoice = voices.find(v => /ja|japanese/i.test(v.lang) || /japan/i.test(v.name));
-        if (jpVoice) ut.voice = jpVoice;
-        speechSynthesis.cancel();
-        speechSynthesis.speak(ut);
-      } catch(e2){
-        alert('تعذر تشغيل الصوت (لا توجد ملفات صوت محلية ولا يدعم المتصفح النطق).');
-      }
-    }
-  }
-
-  /********** تحسين: تحميل أصوات الـ SpeechSynthesis على بعض المتصفحات (تحفيز) **********/
-  // استدعاء getVoices مرةً واحدة لتحفيز المتصفح على تحميل الأصوات
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.getVoices();
-  }
-  </script>
 </body>
 </html>
+
+    
