@@ -1,32 +1,24 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>تعلم اللغة اليابانية — صوتي</title>
+
+  <head>
+  <meta charset="UTF-8">
+  <title>تعلم اللغة اليابانية - الموقع الرسمي</title>
+  <meta name="description" content="تعلم اللغة اليابانية بسهولة مع الدروس الصوتية والحروف والجمل الأساسية.">
+  <meta name="keywords" content="تعلم اليابانية, حروف يابانية, جمل يابانية, دروس يابانية">
+  <meta name="author" content="Bochra Mansouri">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root{
-      --accent:#e60033; --muted:#6b7280; --card:#ffffff;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f5f7fb;color:#0f172a}
-    header{background:linear-gradient(120deg,var(--accent),#ff7b7b);color:#fff;padding:20px;text-align:center}
-    header h1{margin:0;font-size:20px}
-    nav{display:flex;gap:12px;justify-content:center;background:#fff;padding:10px;box-shadow:0 2px 8px rgba(2,6,23,0.06)}
-    nav a{color:var(--accent);text-decoration:none;font-weight:700}
-    .container{max-width:1100px;margin:20px auto;padding:0 16px}
-    h2{color:var(--accent);margin:0 0 12px 0;border-bottom:2px solid var(--accent);display:inline-block;padding-bottom:6px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
-    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.05)}
-    .jp{font-weight:800;font-size:1.3rem;direction:ltr}
-    .romaji{color:var(--muted);font-size:0.95rem;margin-top:6px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:9px;border:0;background:var(--accent);color:#fff;cursor:pointer;font-weight:700}
-    .btn-ghost{background:transparent;border:1px solid #eee;padding:6px 8px;border-radius:8px;cursor:pointer}
-    footer{margin:30px 0;text-align:center;color:var(--muted);font-size:13px}
-    .note{font-size:13px;color:var(--muted)}
-    @media (max-width:720px){ .jp{font-size:1.05rem} }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f0f8ff; color: #333; margin: 0; padding: 0; }
+    header { background: #4682b4; color: white; padding: 20px 0; text-align: center; }
+    h1 { margin: 0; font-size: 2em; }
+    section { padding: 20px; max-width: 800px; margin: auto; background: white; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    h2 { color: #4682b4; }
+    .letter { display: inline-block; text-align: center; margin: 10px; }
+    .letter span { display: block; font-size: 2em; }
+    audio { display: block; margin-top: 5px; }
   </style>
-</head>
+  </head>
 <body>
   <header>
     <h1>✨ تعلم اليابانية — حروف وجمل صوتية (بالعربية)</h1>
